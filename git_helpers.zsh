@@ -21,4 +21,4 @@ function _gac_helper() {
     fi
 }
 alias gac=_gac_helper
-alias gacp="gac -p $*"
+alias gacp="gac -p '$*'"
