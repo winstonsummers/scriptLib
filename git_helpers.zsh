@@ -21,6 +21,7 @@ function _gac_helper() {
             git push
     fi
 }
+# need changes for test purposes
 
 alias gac=_gac_helper
 alias gacp="gac -p \"$*\""
