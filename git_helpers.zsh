@@ -8,7 +8,8 @@ function _gac_helper() {
     p_flag=""
     while getopts "p" flag; do
         case "${flag}" in
-            p) p_flag="true" ;;
+            p) p_flag="true" 
+                shift ;;
             *) exit 1 ;;
         esac
     done
@@ -22,4 +23,4 @@ function _gac_helper() {
 }
 
 alias gac=_gac_helper
-alias gacp="gac -p '$*'"
+alias gacp="gac -p \"$*\""
