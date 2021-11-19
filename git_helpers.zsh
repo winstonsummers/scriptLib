@@ -11,6 +11,7 @@ function _gac_helper() {
                 shift ;;
             *) echo "Invalid flag:"
                 echo " -p is the only valid option."
+                echo "${p_flag}"
                 return
         esac
     done
@@ -29,7 +30,7 @@ function _gac_helper() {
     echo "committing all the changes"
     git commit -m "${commitMessage}"
 
-    echo
+    echo ""
 
     if [[ "${p_flag}" == "true" ]]
         then
@@ -41,13 +42,13 @@ function _gac_helper() {
                 else
                     echo "no remote found..."
                     echo "skipping push"
+                    echo ""
             fi
     fi
 
-    echo
     echo "le fine"
 }
 
 
-alias gac="_gac_helper \"$*\""
+alias gac=_gac_helper
 alias gacp="_gac_helper -p \"$*\""
