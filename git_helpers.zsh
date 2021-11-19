@@ -29,10 +29,11 @@ function _gac_helper() {
     echo "committing all the changes"
     git commit -m "${commitMessage}"
 
-    echo $p_flag
+    echo
+
     if [[ "${p_flag}" == "true" ]]
         then
-            echo "checking for remote"
+            echo "checking for remote..."
             if [[ $(git config --get remote.origin.url) ]]
                 then
                     echo "pushing all the commits"
@@ -43,9 +44,10 @@ function _gac_helper() {
             fi
     fi
 
+    echo
     echo "le fine"
 }
 
 
-alias gac=_gac_helper
+alias gac="_gac_helper \"$*\""
 alias gacp="_gac_helper -p \"$*\""
