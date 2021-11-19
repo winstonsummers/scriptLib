@@ -29,6 +29,7 @@ function _gac_helper() {
     echo "committing all the changes"
     git commit -m "${commitMessage}"
 
+    echo $p_flag
     if [[ "${p_flag}" == "true" ]]
         then
             echo "checking for remote"
