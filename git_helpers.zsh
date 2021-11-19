@@ -31,6 +31,7 @@ function _gac_helper() {
 
     if [[ "${p_flag}" == "true" ]]
         then
+            echo "checking for remote"
             if [[ $(git config --get remote.origin.url) ]]
                 then
                     echo "pushing all the commits"
