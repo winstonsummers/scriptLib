@@ -48,4 +48,4 @@ function _gac_helper() {
 
 
 alias gac=_gac_helper
-alias gacp=_gac_helper -p "$*"
+alias gacp="_gac_helper -p \"$*\""
