@@ -16,6 +16,7 @@ function _gac_helper() {
         esac
     done
 
+
     # validate commit message
     commitMessage="$*"
     if [[ "${commitMessage}" == "" ]]
