@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # checkout to "main" branch
 alias gcm="(git checkout develop || git checkout main || git checkout master) && git pull"
 
@@ -7,15 +9,17 @@ function _gac_helper() {
     p_flag=""
     while getopts "p" flag; do
         case "${flag}" in
-            p) p_flag="true"
+            p ) p_flag="true"
                 shift ;;
-            *) echo "Invalid flag:"
-                echo " -p is the only valid option."
+            ? ) break ;;
+            * ) echo "Invalid flag:"
+                echo "  -p is the only valid option."
                 echo "${p_flag}"
+                echo "$*"
+                echo "${flag}"
                 return
         esac
     done
-
 
     # validate commit message
     commitMessage="$*"
@@ -40,6 +44,7 @@ function _gac_helper() {
                 then
                     echo "pushing all the commits"
                     git push
+                    echo ""
                 else
                     echo "no remote found..."
                     echo "skipping push"
@@ -51,5 +56,5 @@ function _gac_helper() {
 }
 
 
-alias gac=_gac_helper
+alias gac="_gac_helper $*"
 alias gacp="_gac_helper -p \"$*\""
