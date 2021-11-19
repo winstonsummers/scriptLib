@@ -11,7 +11,7 @@ function _gac_helper() {
         case "${flag}" in
             p ) p_flag="true"
                 shift ;;
-            ? ) break ;;
+            ? ) break ;; # not sure why i need this...
             * ) echo "Invalid flag:"
                 echo "  -p is the only valid option."
                 echo "${p_flag}"
