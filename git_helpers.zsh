@@ -14,9 +14,7 @@ function _gac_helper() {
             ? ) break ;; # not sure why we need this...
             * ) echo "Invalid flag:"
                 echo "  -p is the only valid option."
-                echo "${p_flag}"
-                echo "$*"
-                echo "${flag}"
+                echo ""
                 return
         esac
     done
