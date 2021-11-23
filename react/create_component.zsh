@@ -3,15 +3,15 @@
 
 here="$(dirname $0)"
 
-function _create_container_helper() {
+function _create_component_helper() {
     # validate name
     name="$1"
     if [[ "${name}" == "" ]]
         then
-            vared -p "Contaniner Name: " name
+            vared -p "Component Name: " name
     fi
 
-    template_file="$here/js/container.jsx"
+    template_file="$here/js/component.jsx"
 
     # validate output location
     out="$2"
@@ -29,7 +29,7 @@ function _create_container_helper() {
     out="${out}${name}"
     mkdir -p "$out"
 
-    out="${out}/${name}.container.jsx"
+    out="${out}/${name}.component.jsx"
     
     # create file from template
     eval "echo \"$(cat "${template_file}")\" " > "${out}"
@@ -37,4 +37,4 @@ function _create_container_helper() {
     echo "le fine"
 }
 
-alias createContainer=_create_container_helper
+alias createComponent=_create_component_helper
