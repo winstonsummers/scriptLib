@@ -18,18 +18,20 @@ function _create_container_helper() {
     if [[ "${out}" == "" ]] && [[ -d "src/" ]]
         then
             out="src/"
+    elif [[ -d "app/" ]]
+        then
+            out="app/"
     fi
     
 
+    echo "creating output"
+
     out="${out}${name}"
-    echo "out location: $out"
     mkdir -p "$out"
 
     out="${out}/${name}.container.jsx"
     
     # create file from template
-    echo "creating output"
-    # . =(echo "name=${name}")
     eval "echo \"$(cat "${template_file}")\" " > "${out}"
 
     echo "le fine"

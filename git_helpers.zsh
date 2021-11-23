@@ -11,8 +11,8 @@ function _gac_helper() {
     while getopts "p" flag; do
         case "${flag}" in
             p ) p_flag="true"
-                shift ;;
-            ? ) break ;;
+                shift
+                break ;;
             * ) echo "Invalid flag:"
                 echo "  -p is the only valid option."
                 echo ""
