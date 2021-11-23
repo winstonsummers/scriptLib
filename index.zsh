@@ -2,9 +2,9 @@
 # shellcheck shell=bash
 
 # root level
-source ./git_helpers.zsh
 source ./prettier_helpers.zsh
 source ./general_helpers.zsh
 
 # sub dirs
+source ./git/index.zsh
 source ./react/index.zsh
