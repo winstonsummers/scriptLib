@@ -1,0 +1,6 @@
+# editor and helpers
+.vscode/
+
+
+# output dirs
+src/

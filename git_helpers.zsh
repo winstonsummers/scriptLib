@@ -1,4 +1,5 @@
 #!/bin/zsh
+# shellcheck shell=bash
 
 # checkout to "main" branch
 alias gcm="(git checkout develop || git checkout main || git checkout master) && git pull"
@@ -11,7 +12,7 @@ function _gac_helper() {
         case "${flag}" in
             p ) p_flag="true"
                 shift ;;
-            ? ) break ;; # not sure why we need this...
+            ? ) break ;;
             * ) echo "Invalid flag:"
                 echo "  -p is the only valid option."
                 echo ""
