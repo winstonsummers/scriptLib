@@ -1,6 +1,8 @@
 #!/bin/zsh
 # shellcheck shell=bash
 
+#### THIS NEEDS TESTED!!!
+
 # use prettier to format all Js, jsx and json files from the root of a repo
 function _prettyAll_helper() {
     # check for npm first
