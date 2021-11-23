@@ -4,6 +4,7 @@
 # root level
 source ./git_helpers.zsh
 source ./prettier_helpers.zsh
+source ./general_helpers.zsh
 
 # sub dirs
 source ./react/index.zsh
