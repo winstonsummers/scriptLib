@@ -15,33 +15,24 @@ function _create_container_helper() {
 
     # validate output location
     out="$2"
-    if [[ "${out}" == "" ]]
+    if [[ "${out}" == "" ]] && [[ -d "src/" ]]
         then
-            ls_list=$(ls)
-            echo "$ls_list"
-            echo "looking for code dir..."
-            for thing in $ls_list; do
-                echo "${thing}"
-                case "$thing" in
-                    src) 
-                        out="src/" ;;
-                    *) 
-                        out="" ;;
-                esac
-            done;
+            out="src/"
     fi
     
 
     out="${out}${name}"
-    echo "$out"
+    echo "out location: $out"
     mkdir -p "$out"
 
     out="${out}/${name}.container.jsx"
     
-
     # create file from template
-    . "${name}"
-    cat "${template_file}" > "${out}"
+    echo "creating output"
+    # . =(echo "name=${name}")
+    eval "echo \"$(cat "${template_file}")\" " > "${out}"
+
+    echo "le fine"
 }
 
 alias create_container=_create_container_helper

@@ -16,6 +16,8 @@ function _prettyAll_helper() {
 
     echo ""
 
+    # todo: add ts support, probably with a flag... maybe it can be automated by the prettierrc?
+
     # check for prettier
     packageName="prettier"
     if ! npm list | grep "$packageName" && read -qr "prettier is not installed in this project. would you like to fix that? (Y/y) "
