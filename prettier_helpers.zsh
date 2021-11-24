@@ -4,7 +4,7 @@
 #### THIS NEEDS TESTED!!!
 
 # use prettier to format all Js, jsx and json files from the root of a repo
-function _prettyAll_helper() {
+function _pretty_all_helper() {
     # check for npm first
     echo "checking for package.json..."
     if grep version package.json
@@ -21,8 +21,7 @@ function _prettyAll_helper() {
     # todo: add ts support, probably with a flag... maybe it can be automated by the prettierrc?
 
     # check for prettier
-    packageName="prettier"
-    if ! npm list | grep "$packageName" && read -qr "prettier is not installed in this project. would you like to fix that? (Y/y) "
+    if ! npm list | grep prettier && read -qr "prettier is not installed in this project. would you like to fix that? (Y/y) "
         then
             npm install prettier
             echo ""
@@ -37,4 +36,4 @@ function _prettyAll_helper() {
     echo "very pretty now ^o^"
 }
 
-alias prettyAll=_prettyAll_helper
+alias prettyAll=_pretty_all_helper
