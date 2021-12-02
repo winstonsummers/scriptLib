@@ -42,6 +42,7 @@ function _gac_helper() {
                     git push
                     echo ""
                 else
+                # maybe add an origin someday
                     echo "no remote found..."
                     echo "skipping push"
                     echo ""
