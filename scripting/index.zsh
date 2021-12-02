@@ -1,9 +1,7 @@
 #!/bin/zsh
 # shellcheck shell=bash
 
-function() {
-    here="$(dirname $0)"
+here_scripting="$(dirname $0)"
 
-    source "$here/create_script.zsh"
-    source "$here/create_source.zsh"
-}
+source "$here_scripting/create_script.zsh"
+source "$here_scripting/create_source.zsh"

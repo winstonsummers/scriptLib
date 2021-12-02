@@ -1,9 +1,7 @@
 #!/bin/zsh
 # shellcheck shell=bash
 
-function() {
-    here="$(dirname $0)"
-    
-    source "$here/git_add_commit.zsh"
-    source "$here/git_checkout_helpers.zsh"
-}
+here_git="$(dirname $0)"
+
+source "$here_git/git_add_commit.zsh"
+source "$here_git/git_checkout_helpers.zsh"

@@ -1,15 +1,13 @@
 #!/bin/zsh
 # shellcheck shell=bash
 
-function() {
-    here="$(dirname $0)"
+here="$(dirname $0)"
 
-    # root level
-    source "$here/prettier_helpers.zsh"
-    source "$here/general_helpers.zsh"
+# root level
+source "$here/prettier_helpers.zsh"
+source "$here/general_helpers.zsh"
 
-    # sub dirs
-    source "$here/shared/index.zsh"
-    source "$here/git/index.zsh"
-    source "$here/react/index.zsh"
-}
+# sub dirs
+source "$here/shared/index.zsh"
+source "$here/git/index.zsh"
+source "$here/react/index.zsh"

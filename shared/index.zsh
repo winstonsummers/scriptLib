@@ -2,8 +2,7 @@
 # shellcheck shell=bash
 
 # helper functions and such that many of these modules may use
-function() {
-    here="$(dirname $0)"
+here_shared="$(dirname $0)"
 
-    source "$here/create_helpers.zsh"
-}
+source "$here_shared/create_helpers.zsh"
+
