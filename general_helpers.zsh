@@ -6,4 +6,4 @@ alias rezsh="source ~/.zshrc"
 
 # rerun last command with sudo
 alias please="sudo !!"
-alias plz=please
+alias plz="sudo !!"

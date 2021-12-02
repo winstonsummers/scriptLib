@@ -12,28 +12,17 @@ function _create_container_helper() {
     fi
 
     # validate output location
-    out="$2"
-    if [[ "${out}" == "" ]] 
-        then
-            if [[ -d "src/" ]]
-                then
-                    out="src/"
-            elif [[ -d "app/" ]]
-                then
-                    out="app/"
-            fi
-    fi
+    out=_validate_output_location "$2"
     
     echo "creating output"
 
-    out="${out}${name}"
-    mkdir -p "$out"
+    out_dir=_validate_mkdir "$out$name"
 
-    out="${out}/${name}.container.jsx"
+    out_file="$out_dir/$name.container.jsx"
     
     # create file from template
     template_file="$here/template/container.jsx"
-    eval "echo \"$(cat "${template_file}")\" " > "${out}"
+    eval "echo \"$(cat "${template_file}")\" " > "${out_file}"
 
     echo "le fine"
 }
