@@ -21,6 +21,9 @@ function _create_source_helper() {
     template_file="$here/template/source.zsh"
     eval "echo \"$(cat "${template_file}")\" " > "${out_file}"
 
+    echo "adding a script file"
+    _create_script_helper "$name" "$2"
+
     echo "le fine"
 }
 

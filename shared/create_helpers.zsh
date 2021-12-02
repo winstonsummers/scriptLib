@@ -27,5 +27,3 @@ function _validate_mkdir() {
 
     return "$1"
 }
-
-# the file creation

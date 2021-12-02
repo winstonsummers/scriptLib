@@ -81,5 +81,9 @@ so powerfull sounding...
 - `createContainer` -- Takes a name for the container optionally followed by a path to where to put the created file. The created file is a basic boilerplate for a react container.
 - `createComponent` -- Takes a name for the component optionally followed by a path to where to put the created file. The created file is a basic boilerplate for a react component.
 
+### Scripting Helpers
+- `createScript` -- Tackes a name for the script optionally followed by a path to where to put the created file. The created file is a basic boilerplate for a script file.
+- `createSource` -- Tackes a name for the source optionally followed by a path to where to put the created files. The created files are boilerplate for a source file and a script file.
+
 
 ### Thank you and goodnight!

@@ -1,9 +1,6 @@
 #!/bin/zsh
 # shellcheck shell=bash
 
-# ${name}
-function() {
-    here="$(dirname \$0)"
+here_${name}="$(dirname \$0)"
 
-    source "\$here/${name}"
-}
+source "\$here_${name}/${name}.zsh"
