@@ -143,7 +143,7 @@ This is a current list of the commands that are available after set up. This lis
 
 - `initScriptLib` - sets up this repo for zsh
 - `teardownScriptLib` - removes script lib
-- config file of some kind - an untracked file for configuration settings
+- config file of some kind - an untracked file generated for configuration settings
 <br />
 <br />
 <br />

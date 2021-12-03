@@ -1,7 +1,9 @@
 # editor and helpers
 .vscode/
 
-
 # output dirs
 src/
 app/
+
+# configuration file
+script_lib_config.zsh 
