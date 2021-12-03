@@ -4,6 +4,7 @@
 here="$(dirname $0)"
 
 # root level
+source "$here/setup.zsh"
 source "$here/prettier_helpers.zsh"
 source "$here/general_helpers.zsh"
 
