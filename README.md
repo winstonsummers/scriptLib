@@ -2,9 +2,12 @@
 
 > ScriptLib is for Everyone! ~~ Winston S.
 
+\
 What better a name? This is a repo to store scripts that I use in my day to day. the goal being that I won't have to rewrite them whenever I set up a new computer.
 
 I use [zsh](https://ohmyz.sh/)!
+
+&nbsp;
 
 ## Setup
 
@@ -17,6 +20,9 @@ source ~/path/to/this/repo/index.zsh
 to your `.zshrc`, open a new termianl and **BAM!!!** you have new zsh commands.
 
 In the future, I plan to add a setup script you can run from the root of this repo but we haven't gotten there yet... Probably a full mac (hopefully pc too) setup script, with some brew install and other fancy dancy *stuff* to make my life easier in the future!
+
+
+&nbsp;
 
 ## Tech Used
     
@@ -39,6 +45,9 @@ Some of the tech that we referenced or used in the scripts include
 - French
 - stings
     - lots and lots of STRINGSSSSSSSS.
+
+
+&nbsp;
 
 ## File Structure
 
@@ -65,11 +74,17 @@ The file structure here is pretty basic.
 
 At the root, there are some smaller helper files and sub directories that are collections of related scripts. Files named `index.zsh` are source files, they include the files from the directory they are in. Basically we are pretending that there is a module structure. Why? because it makes it easier to organize and understand the code that is presented. In the future I might find a way that some scripting guru has found to modulize this in a meaningful way but so far I haven't.
 
+
+&nbsp;
+
 ## Style Guide
 
 > Some rules can be bent, others can be broken ~~ Morpheus
 
+\
 There are a handful of conventions that I use so that these scripts all look and behave basically the same way. Nothing ground breaking
+
+&nbsp;
 
 - ### General Rules
     - End files with a blank line.
@@ -92,11 +107,16 @@ There are a handful of conventions that I use so that these scripts all look and
     - Should be named in `snake_case`.
     - Should have a descriptive name that reflects the functionality in the file.
 
+
+&nbsp;
+
 ## Current List Of Commands 
 ###### so powerfull sounding...
 
 \
 This is a current list of the commands that are available after set up. This list also reflects to how they are organized in the repo. <!-- Need to expand this presentation so it is more helpful... -->
+
+&nbsp;
 
 - ### General Helpers
     - `rezsh` -- Resets your zsh session (`source ~/.zshrc`).
@@ -121,6 +141,8 @@ This is a current list of the commands that are available after set up. This lis
     - `createScript` -- Tackes a name for the script optionally followed by a path to where to put the created file. The created file is a basic boilerplate for a script file.
     - `createSource` -- Tackes a name for the source optionally followed by a path to where to put the created files. The created files are boilerplate for a source file and a script file.
 
+&nbsp;
+
 ## Coming Soon!
 ###### or at least someday
 
@@ -142,6 +164,7 @@ Planned scripts and other ideas
     - maybe create an interactive tool...
         - existing and expanded functions could serve as commands AND as the helpers to an interactive tool
 
+\
 \
 \
 -- Thank you and goodnight!
