@@ -5,4 +5,5 @@
 here_shared="$(dirname $0)"
 
 source "$here_shared/create_helpers.zsh"
+source "$here_shared/node_helpers.zsh"
 

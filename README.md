@@ -9,6 +9,7 @@ I use [zsh](https://ohmyz.sh/)!
 ## Setup
 
 Currently you should just need to add 
+
 ```zsh
 source ~/path/to/this/repo/index.zsh
 ```
@@ -54,20 +55,21 @@ The file structure here is pretty basic.
  │   ├──{some_other_helper.zsh
  │   │
  │   ├──{maybe_some_kind_of_assets
- │   │   ├──{like_template_files.txt
- │   │   └──{or_something_else_that_is_useful.zsh
- │   │
+ │   │   ├──{like_template_files.js
+ │   │   ├──{or_something_else_that_is_useful.txt
+ │   │   │
+ │   │   └──{etc.
  │   └──{etc.
  └──{etc.
 ```
 
-At the root, there are some smaller helper files and sub directories that are collections of related scripts. Files named `index.zsh` are source files, they include the files from the directory they are in. Basically we are pretending that there is a module structure. Why? because it makes it easier to organize and understand the code that is presented.
+At the root, there are some smaller helper files and sub directories that are collections of related scripts. Files named `index.zsh` are source files, they include the files from the directory they are in. Basically we are pretending that there is a module structure. Why? because it makes it easier to organize and understand the code that is presented. In the future I might find a way that some scripting guru has found to modulize this in a meaningful way but so far I haven't.
 
 ## Style Guide
 
 > Some rules can be bent, others can be broken ~~ Morpheus
 
-There are a handful of conventions that I use so that these scripts all work basically the same way. Nothing ground breaking
+There are a handful of conventions that I use so that these scripts all look and behave basically the same way. Nothing ground breaking
 
 - ### General Rules
     - End files with a blank line.
@@ -136,10 +138,10 @@ Planned scripts and other ideas
         - ts
         - reducer file
         - hooks
-        - setup with index file and so on.
+        - setup with a index file, component and so on.
     - maybe create an interactive tool...
-        - existing and expanded functions could serve as commands as well as the helpers to an interactive tool
+        - existing and expanded functions could serve as commands AND as the helpers to an interactive tool
 
-
+\
 \
 -- Thank you and goodnight!
